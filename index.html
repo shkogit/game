@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+
+<div id="app"></div>
+
+<p id="how">
+    <- : 좌측 이동 <br>
+    -> : 우측 이동 <br>
+    space : 점프 <br>
+    Z : 가속도 1.5배 <br>
+    <button onclick="this.parentNode.remove()">close</button>
+</p>
+
+<!-- lib -->
+<script>
+    const prop = (target, o) => Object.assign(target, o);
+    const log = console.log;
+    const clone = o => JSON.parse(JSON.stringify(o));
+</script>
+
+<!-- vendor-->
+<script src="vendor/vue.js"></script>
+
+<!-- store -->
+<script src="src/store/store.js"></script>
+
+<!-- game app -->
+<script src="game/Game.js"></script>
+
+<!-- components -->
+<script src="src/components/option-range.js"></script>
+<script src="src/components/option-toggle.js"></script>
+<script src="src/components/option-radio.js"></script>
+<script src="src/components/panel-option.js"></script>
+<script src="src/components/panel-display.js"></script>
+<script src="src/components/panel-info.js"></script>
+<script src="src/components/game-app.js"></script>
+
+<!-- main -->
+<script src="src/main.js"></script>
+
+</body>
+</html>

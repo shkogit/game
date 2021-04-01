@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    user-select: none;
+    overflow: hidden;
+}
+
+#game {
+    border: #333 solid 1px;
+    position: relative;
+}
+
+canvas {
+    display: block;
+}
+
+.layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#option {
+    width: calc(800px - 10px);
+    padding: 20px 30px;
+    margin: 5px;
+    background: rgba(225,225,225,.75);
+}
+
+.option-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.option-group {
+    display: flex;
+    align-items: center;
+}
+
+.option-group b {
+    width: 170px;
+}
+
+#option .btn {
+    width: 40px;
+    margin-right: 10px;
+}
+
+#option .btn-on {
+    background: #3a2;
+}
+
+#option .btn-off {
+    background: #f44;
+}
+
+#option [type=range] {
+    width: 110px;
+}
+
+#option [type=radio] {
+    margin-right: 10px;
+}
+
+#info {
+    margin: 0 5px 5px;
+    padding: 20px;
+    background: rgba(22,22,22,.5);
+    display: inline-block;
+    color: white;
+}
+
+#info dd {
+    padding-left: 2rem;
+}
+
+#how {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 20px;
+    background: #eee;
+}
